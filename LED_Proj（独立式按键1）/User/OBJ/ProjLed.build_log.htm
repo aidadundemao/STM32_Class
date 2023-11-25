@@ -1,0 +1,74 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: ¦ÌVision V5.24.2.0
+Copyright (C) 2017 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: z Microsoft, Microsoft, LIC=47GU5-GQ7NI-01DP1-CIHR9-QA6NR-KRDXU
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Plus  Version: 5.24.1
+Toolchain Path:  c:\MDK5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 5 (build 528)
+Assembler:       Armasm.exe V5.06 update 5 (build 528)
+Linker/Locator:  ArmLink.exe V5.06 update 5 (build 528)
+Library Manager: ArmAr.exe V5.06 update 5 (build 528)
+Hex Converter:   FromElf.exe V5.06 update 5 (build 528)
+CPU DLL:         SARMCM3.DLL V5.24.1
+Dialog DLL:      DARMSTM.DLL V1.68.0.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.0.1.0
+Dialog DLL:      TARMSTM.DLL V1.66.0.0
+ 
+<h2>Project:</h2>
+G:\LED_Proj£¨¶ÀÁ¢Ê½°´¼ü1£©\User\ProjLed.uvprojx
+Project File Date:  10/20/2023
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 5 (build 528)', folder: 'c:\MDK5\ARM\ARMCC\Bin'
+Build target 'Template'
+compiling main.c...
+compiling key.c...
+hardware\key.c(11): error:  #65: expected a ";"
+  	int (mode)key_up=1;
+hardware\key.c(12): error:  #20: identifier "KEY1" is undefined
+      if(key_up && (
+EY0==0||KEY1==0||KEY2==0||WK_UP==1))
+hardware\key.c(12): error:  #20: identifier "KEY2" is undefined
+      if(key_up && (
+EY0==0||KEY1==0||KEY2==0||WK_UP==1))
+hardware\key.c(12): error:  #20: identifier "WK_UP" is undefined
+      if(key_up && (
+EY0==0||KEY1==0||KEY2==0||WK_UP==1))
+hardware\key.c(16): error:  #20: identifier "KEY" is undefined
+          if(KEY==0)return KEY0_PRES;
+hardware\key.c(16): error:  #20: identifier "KEY0_PRES" is undefined
+          if(KEY==0)return KEY0_PRES;
+hardware\key.c(17): error:  #20: identifier "KEY1_PRES" is undefined
+  			else if(KEY1=0)return KEY1_PRES;
+hardware\key.c(18): error:  #20: identifier "KEY2_PRES" is undefined
+  				else if(KEY2=0)return KEY2_PRES;
+hardware\key.c(19): error:  #20: identifier "WKUP_PRES" is undefined
+       	else if(WK_UP=0)return WKUP_PRES;
+hardware\key.c(11): warning:  #177-D: variable "mode"  was declared but never referenced
+  	int (mode)key_up=1;
+hardware\key.c: 1 warning, 9 errors
+".\OBJ\ProjLed.axf" - 9 Error(s), 1 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.STM32F1xx_DFP.2.2.0.pack
+                Keil.STM32F1xx_DFP.2.2.0
+                STMicroelectronics STM32F1 Series Device Support, Drivers and Examples
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\_Template
+  c:\MDK5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include
+
+<h2>Collection of Component Files used:</h2>
+Target not created.
+Build Time Elapsed:  00:00:03
+</pre>
+</body>
+</html>
